@@ -120,6 +120,7 @@ begin
   mAxis.HasTitle := True;
   mAxis.AxisTitle.Caption := 'Y';
 
+  ExcelApp.Application.ActiveWorkbook.ActiveChart.Legend[0].Delete;
   ExcelApp.Application.ActiveWorkbook.ActiveChart.SetElement(328);
 
 end;
